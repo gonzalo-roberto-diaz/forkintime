@@ -1,0 +1,19 @@
+<ul class="nav nav-tabs">
+  <li><a ng-href="/#/service" >Servicio</a></li>
+  <li><a ng-href="/#/ourfleet">Nuestra flota</a></li>
+  <li class="active"><a ng-href="/#/whyus">Por qué nosotros</a></li>
+  <li><a ng-href="/#/contact">Contáctese</a></li>
+</ul>
+
+<section class="main-tab-content">
+
+  <div class="reviews-container" ng-controller="ReviewsIndexCtrl">
+
+    <div ng-repeat="review in reviews" class="review">
+      <div class="paragraph"><i>{{review.review_text}}</i></div>
+      <div class="signature">{{review.customer_name + ", " + review.location}}</div>
+    </div>
+
+  </div>
+
+</section>

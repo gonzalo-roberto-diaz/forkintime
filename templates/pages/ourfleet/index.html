@@ -1,0 +1,50 @@
+<ul class="nav nav-tabs">
+  <li><a  ng-href="/#/service" >Servicio</a></li>
+  <li class="active" ><a ng-href="/#/ourfleet">Nuestra flota</a></li>
+  <li><a  ng-href="/#/whyus" >Por qué nosotros</a></li>
+  <li><a  ng-href="/#/contact">Contáctese</a></li>
+</ul>
+
+<section class="main-tab-content">
+  <div ng-controller="ForkliftsIndexCtrl" class="fleet-members">
+
+
+    <div ng-repeat="forklift in forklifts">
+      <div class="fleet-member-card">
+        <div class="title">{{forklift.make + " " + forklift.model}}</div>
+        <div class="central">
+          <div class="img-container" ><img ng-src="{{forklift.picture}}" class="photo"/></div>
+          <div class="data">
+            <div class="cardrow">
+              <div class="title">Marca:</div>
+              <div>{{forklift.make}}
+            </div>
+            <div class="cardrow">
+              <div class="title">Modelo:</div>
+              <div>{{forklift.model}}</div>
+            </div>
+            <div class="cardrow">
+              <div class="title">Carga máx:</div>
+              <div>{{forklift.max_load_kg}}&nbsp;kg</div>
+            </div>
+            <div class="cardrow">
+              <div class="title">Altura máx:</div>
+              <div>{{forklift.max_height_m}}&nbsp;m</div>
+            </div>
+            <div class="cardrow">
+              <div class="title">Motor:</div>
+              <div>{{forklift.engine}}</div>
+            </div>
+            <div class="cardrow">
+              <div class="title">Ruedas:</div>
+              <div>{{forklift.wheel_type}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description">{{forklift.description}}</div>
+    </div>
+
+
+  </div>
+</div>
