@@ -1,13 +1,8 @@
 <?php
 
+require_once "db_config.php";
+
 header("Content-Type: text/plain; charset=utf-8");
-
-
-$host="localhost";
-$username ="root";
-$password="broadleaf";
-$db_name="clarkatiempo";
-
 
 $db = new mysqli($host, $username, $password, $db_name);
 if ($mysqli->connect_errno) {
@@ -23,16 +18,17 @@ if(!$result = $db->query($sql)){
 $res = array();
 while($row = mysqli_fetch_assoc($result)){
 
-  $fila = array();
+  $fila = array_map("utf8_encode", $row);
+/*
   $fila["customer_name"] = $row["customer_name"];
   $fila["location"] = $row["location"];
-  $fila["review_text"] = $row["review_text"];
-
+  $fila["review_text"] = utf8_encode($row["review_text"]);
+*/
   $res[] = $fila;
 }
-$db->close();
+
 
 echo json_encode($res);
-
+$db->close();
 
 ?>
