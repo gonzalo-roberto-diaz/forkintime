@@ -1,34 +1,27 @@
 <ul class="nav nav-tabs">
-  <li class="active"><a ng-href="/#/service">Servicio</a></li>
-  <li><a ng-href="/#/ourfleet">Nuestra flota</a></li>
-  <li><a ng-href="/#/whyus">Por qué nosotros</a></li>
-  <li><a ng-href="/#/contact">Contáctese</a></li>
+  <li class="active"><a ng-href="/#/service">{{'service' | translate}}</a></li>
+  <li><a ng-href="/#/ourfleet">{{'our_fleet' | translate}}</a></li>
+  <li><a ng-href="/#/whyus">{{'why_us' | translate}}</a></li>
+  <li><a ng-href="/#/contact">{{'contact' | translate}}</a></li>
 </ul>
 
 <section class="main-tab-content">
-  <div class="service-container">
+  <div class="service-container" ng-controller="OurServicesTranslationCtrl">
     <div class="left-content">
 
       <div class="item">
-        <div class="title">Confianza</div>
-        <div class="paragraph">
-          Nos hacemos responsables de que el autoelevador esté disponible y a tiempo,
-          cuando usted lo necesite.
-        </div>
+        <div class="title">{{'trust' | translate}}</div>
+        <div class="paragraph">{{'trust_text' | translate}}</div>
       </div>
 
       <div class="item">
-        <div class="title">Precio</div>
-        <div class="paragraph">
-          Tarifas muy razonables. ¡Cobramos por hora o <em>fracción</em>!
-        </div>
+        <div class="title">{{'price_value' | translate}}</div>
+        <div class="paragraph">{{'price_value_text' | translate}}</div>
       </div>
 
       <div class="item">
-        <div class="title">Profesionalismo</div>
-        <div class="paragraph">
-          Conductores capacitados, serviciales y corteses.
-        </div>
+        <div class="title">{{'professionalism' | translate}}</div>
+        <div class="paragraph">{{'professionalism_text' | translate}}</div>
       </div>
 
     </div>

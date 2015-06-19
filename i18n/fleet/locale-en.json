@@ -1,0 +1,20 @@
+{
+  "make": "Make:",
+  "model": "Model:",
+  "wheels": "Wheels:",
+  "wheel_type": "Wheel type:",
+  "engine_type": "Engine:",
+  "max_load": "Max load:",
+  "max_height": "Max height",
+  "komatsu_fg_15t_description": "Older model, but still going strong. Its gasoline engine provides excellent torque and responsive throttle. Apt for outdoors.",
+  "mitsubishi_fgc_15n_description" : "Multi-function forklift. Ergonomic and comfortable for operators, it is ideal for long shifts.",
+  "mitsubishi_fb10_krt_description" : "A compact model, featuring excellent reach and turning radius. The 3rd rear wheel gives it excellent maneuverability.",
+  "mitsubishi_pwf11_description" : "Light-duty walkie stacker. Ideal for repetitive tasks on short distances.",
+  "engine_type_gasoline" : "gasoline",
+  "engine_type_electric" : "electric",
+  "engine_type_natural_gas" : "natural gas",
+  "wheel_type_cushioned" : "cushioned",
+  "wheel_type_pneumatic" : "pneumatic",
+  "wheel_type_cushioned_pneumatic":  "cushioned/pneumatic",
+  "wheel_type_cushioned_bearings": "cushioned/bearings"
+}

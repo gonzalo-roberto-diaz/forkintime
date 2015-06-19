@@ -2,7 +2,7 @@
 
 $host="localhost";
 $username ="root";
-$password="broadleaf";
+$password="";
 $db_name="clarkatiempo";
 
 ?>

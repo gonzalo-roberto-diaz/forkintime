@@ -6,7 +6,7 @@ body{
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-header{
+.main-title{
   padding-top:5px;
 	font-weight:900;
 	font-size:38px;
@@ -14,6 +14,16 @@ header{
   color: #555;
 }
 
+.language-flag-container{
+  float: right;
+}
+
+.language-flag-container .flag {
+  cursor: pointer;
+  cursor: hand;
+  width: 35px;
+  margin: 3px;
+}
 
 .mainContent{
   margin-top: 15px;

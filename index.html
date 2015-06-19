@@ -8,7 +8,9 @@
   </head>
   <body>
 
-  <header>CLARKATIEMPO.COM</header>
+  <language-flags></language-flags>
+  <div class="main-title">CLARKATIEMPO.COM</div>
+
 
   <div class="mainContent">
 
@@ -22,12 +24,16 @@
  </div>
 
   <!-- vendor -->
+
   <script src="javascript/vendor/angular.js"></script>
   <script src="javascript/vendor/jquery-2.1.4.min.js"></script>
-
-  <script src="javascript/vendor/angular-route.js"></script>
+  <script src="javascript/vendor/angular-sanitize.js"></script>
   <script src="javascript/vendor/angular-resource.js"></script>
+  <script src="javascript/vendor/angular-route.js"></script>
+  <script src="javascript/vendor/angular-translate.js"></script>
+  <script src="javascript/vendor/angular-translate-loader-static-files.js"></script>
   <!--<script src="javascript/vendor/bootstrap.js"></script>-->
+
 
   <!-- App -->
   <script src="javascript/app.js"></script>
@@ -36,10 +42,16 @@
   <!-- Directives -->
   <script src="javascript/directives/coverSlides.js"></script>
   <script src="javascript/directives/contactCard.js"></script>
+  <script src="javascript/directives/languageFlags.js"></script>
 
   <!-- Controllers -->
+  <script src="javascript/controllers/ourServicesTranslationCtrl.js"></script>
+  <script src="javascript/controllers/ourFleetTranslationCtrl.js"></script>
   <script src="javascript/controllers/forkliftsIndexCtrl.js"></script>
   <script src="javascript/controllers/reviewsIndexCtrl.js"></script>
+  <script src="javascript/controllers/languageButtonsCtrl.js"></script>
+
+
   <!--
   <script src="assets/javascript/controllers/noteShowController.js"></script>
   <script src="assets/javascript/controllers/noteEditController.js"></script>

@@ -18,13 +18,13 @@ if(!$result = $db->query($sql)){
 $res = array();
 while($row = mysqli_fetch_assoc($result)){
 
-  $fila = array_map("utf8_encode", $row);
+  //$fila = array_map("utf8_encode", $row);
 /*
   $fila["customer_name"] = $row["customer_name"];
   $fila["location"] = $row["location"];
   $fila["review_text"] = utf8_encode($row["review_text"]);
 */
-  $res[] = $fila;
+  $res[] = $row;
 }
 
 

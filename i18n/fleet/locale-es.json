@@ -1,0 +1,13 @@
+{
+  "komatsu_fg_15t_description": "Un modelo antiguo, pero que aún presta un excelente servicio. TIene buena respuesta de potencia, y es apto para exteriores.",
+  "mitsubishi_fgc_15n_description" : "Autoelevador multifunción. Ideal para turnos largos, por ser el más confortable y seguro para los conductores.",
+  "mitsubishi_fb10_krt_description" : "Modelo pequeño con excelente alcance y radio de giro. Ideal para depósitos. El tener 3 ruedas lo hace muy maniobrable.",
+  "mitsubishi_pwf11_description" : "Una zorra eléctrica, ideal para trabajos repetitivos en distancias cortas. El operador la acompaña caminando.",
+  "engine_type_gasoline" : "a nafta",
+  "engine_type_electric" : "eléctrico",
+  "engine_type_natural_gas" : "a gas",
+  "wheel_type_cushioned" : "macizas",
+  "wheel_type_pneumatic" : "neumáticas",
+  "wheel_type_cushioned_pneumatic":  "macizas/neumáticas",
+  "wheel_type_cushioned_bearings": "macizas/rodamientos"
+}
