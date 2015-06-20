@@ -2,7 +2,7 @@
 
 require_once "db_config.php";
 
-header("Content-Type: text/plain; charset=utf-8");
+header("Content-Type: application/json;; charset=utf-8");
 
 $db = new mysqli($host, $username, $password, $db_name);
 if ($mysqli->connect_errno) {
@@ -15,20 +15,18 @@ if(!$result = $db->query($sql)){
     die('There was an error running the query [' . $db->error . ']');
 }
 
+
 $res = array();
 while($row = mysqli_fetch_assoc($result)){
-
-  //$fila = array_map("utf8_encode", $row);
-/*
-  $fila["customer_name"] = $row["customer_name"];
-  $fila["location"] = $row["location"];
-  $fila["review_text"] = utf8_encode($row["review_text"]);
-*/
+  if ($environment=="production"){
+    $row= array_map("utf8_encode", $row);
+  }
   $res[] = $row;
 }
 
 
-echo json_encode($res);
 $db->close();
+echo json_encode($res);
+
 
 ?>

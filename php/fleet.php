@@ -30,9 +30,11 @@ if(!$result = $db->query($sql)){
 
 $res = array();
 while($row = mysqli_fetch_assoc($result)){
+  if ($environment=="production"){
+    $row= array_map("utf8_encode", $row);
+  }
   $res[] = $row;
 }
-$db->close();
 
 echo json_encode($res);
 
