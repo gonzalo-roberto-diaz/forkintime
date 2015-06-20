@@ -105,6 +105,10 @@ body{
   width: 250px;
 }
 
+.cardrow{
+  width: 100%;
+}
+
 .fleet-member-card .central .data .cardrow{
   display: flex;
   flex-direction: row;

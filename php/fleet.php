@@ -16,9 +16,9 @@ $sql .="  fkl.make,  \n";
 $sql .="  fkl.model, \n";
 $sql .="  fkl.max_load_kg,  \n";
 $sql .="  fkl.max_height_m,  \n";
-$sql .="  fkl.trans_key,  \n";
-$sql .="  fkl.wheel_type_trans_key,  \n";
-$sql .="  fkl.engine_type_trans_key,  \n";
+$sql .="  fkl.description_trk,  \n";
+$sql .="  fkl.wheel_type_trk,  \n";
+$sql .="  fkl.engine_type_trk,  \n";
 $sql .="  fkl.wheels,  \n";
 $sql .="  fkl.picture  \n";
 $sql .="from forklifts fkl   \n";
@@ -30,21 +30,6 @@ if(!$result = $db->query($sql)){
 
 $res = array();
 while($row = mysqli_fetch_assoc($result)){
-
-  //$fila = array_map("utf8_encode", $row);
-
-
-/*
-  $fila = array();
-  $fila["make"] = $row["make"];
-  $fila["model"] = $row["model"];
-  $fila["description"] = utf8_encode($row["description"]);
-  $fila["picture"] = $row["picture"];
-  $fila["max_load_kg"] = $row["max_load_kg"];
-  $fila["max_height_m"] = $row["max_height_m"];
-  $fila["engine"] = $row["engine"];
-  $fila["wheel_type"] = $row["wheel_type"];
-*/
   $res[] = $row;
 }
 $db->close();

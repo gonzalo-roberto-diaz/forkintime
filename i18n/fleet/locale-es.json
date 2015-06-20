@@ -1,4 +1,11 @@
 {
+  "make": "Marca:",
+  "model": "Modelo:",
+  "wheels": "Ruedas:",
+  "wheel_type": "Tipo:",
+  "engine_type": "Motor:",
+  "max_load": "Carga máx:",
+  "max_height": "Altura máx:",
   "komatsu_fg_15t_description": "Un modelo antiguo, pero que aún presta un excelente servicio. TIene buena respuesta de potencia, y es apto para exteriores.",
   "mitsubishi_fgc_15n_description" : "Autoelevador multifunción. Ideal para turnos largos, por ser el más confortable y seguro para los conductores.",
   "mitsubishi_fb10_krt_description" : "Modelo pequeño con excelente alcance y radio de giro. Ideal para depósitos. El tener 3 ruedas lo hace muy maniobrable.",

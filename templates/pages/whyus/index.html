@@ -10,7 +10,7 @@
   <div class="reviews-container" ng-controller="ReviewsIndexCtrl">
 
     <div ng-repeat="review in reviews" class="review">
-      <div class="paragraph"><i>{{review.review_text}}</i></div>
+      <div class="paragraph"><i>{{review.review_text_trk | translate}}</i></div>
       <div class="signature">{{review.customer_name + ", " + review.location}}</div>
     </div>
 
