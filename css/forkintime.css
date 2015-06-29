@@ -33,7 +33,7 @@ body{
 }
 
 .main-tab-content{
-  font-size: 20px;
+  font-size: 14px;
   padding: 15px;
 }
 
@@ -163,11 +163,11 @@ body{
 .service-container .item .title{
   font-weight: bold;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
 }
 
 .service-container .item .paragraph{
-  text-align: center;
+  text-align: left;
 }
 
 .rotating-images {
