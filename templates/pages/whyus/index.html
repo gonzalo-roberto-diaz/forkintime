@@ -1,8 +1,8 @@
 <ul class="nav nav-tabs">
-  <li><a ng-href="/#/service">{{'service' | translate}}</a></li>
-  <li><a ng-href="/#/ourfleet">{{'our_fleet' | translate}}</a></li>
-  <li class="active"><a ng-href="/#/whyus">{{'why_us' |   translate}}</a></li>
-  <li><a ng-href="/#/contact">{{'contact' | translate}}</a></li>
+  <li><a ng-href="/#/service" translate>{{'service'}}</a></li>
+  <li><a ng-href="/#/ourfleet" translate>{{'our_fleet'}}</a></li>
+  <li class="active" translate><a ng-href="/#/whyus">{{'why_us'}}</a></li>
+  <li><a ng-href="/#/contact" translate>{{'contact'}}</a></li>
 </ul>
 
 <section class="main-tab-content">
@@ -10,7 +10,7 @@
   <div class="reviews-container">
 
     <div ng-repeat="review in reviews" class="review">
-      <div class="paragraph"><i>{{review.review_text_trk | translate}}</i></div>
+      <div class="paragraph"><i translate>{{review.review_text_trk}}</i></div>
       <div class="signature">{{review.customer_name + ", " + review.location}}</div>
     </div>
 
