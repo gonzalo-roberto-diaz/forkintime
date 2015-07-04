@@ -3,7 +3,7 @@
 $host="localhost";
 $username ="root";
 $password="";
-$db_name="clarkatiempo";
+$db_name="forkontime";
 $environment = "development";
 
 ?>
