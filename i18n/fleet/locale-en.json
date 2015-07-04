@@ -2,7 +2,7 @@
   "make": "Make:",
   "model": "Model:",
   "wheels": "Wheels:",
-  "wheel_type": "Wheel type:",
+  "wheel_type": "Type:",
   "engine_type": "Engine:",
   "max_load": "Max load:",
   "max_height": "Max height",
