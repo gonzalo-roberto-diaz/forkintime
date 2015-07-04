@@ -4,11 +4,10 @@ require_once "db_config.php";
 
 header("Content-Type: application/json; charset=UTF-8;");
 
-$language =$_GET['proposed-language'];
 
 $db = new mysqli($host, $username, $password, $db_name);
-if ($mysqli->connect_errno) {
-    echo "Failed to connect to MySQL: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error;
+if ($db->connect_errno) {
+    echo "Failed to connect to MySQL: (" . $db->connect_errno . ") " . $db->connect_error;
 }
 
 $sql ="select  \n";
@@ -30,7 +29,7 @@ if(!$result = $db->query($sql)){
 
 $res = array();
 while($row = mysqli_fetch_assoc($result)){
-  if ($environment=="production"){
+  if ($environment=="development_mac"){
     $row= array_map("utf8_encode", $row);
   }
   $res[] = $row;
